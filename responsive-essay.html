@@ -8,17 +8,38 @@
 body{
 	font-family: system-ui;
 }
-.row{ display: flex ; gap:1rem; }
-.row > * { flex: 1;}
 
-@media (min-width:666px) {
+	.row{ display: flex ; gap:1rem; }
+	.row > * { flex: 1;}
+	.row{max-width: 1200px; margin:auto;}
+
+	/*version mobile*/
+	@media(max-width:640px){
+		.row{flex-direction:column;}
+	}
+
+	
+
+
+
+
+/*version desktop*/
+/* @media (min-width:640px){
+	.row{ display: flex ; gap:1rem; }
+	.row > * { flex: 1;}
+} */
+
+
+
+
+/* @media (min-width:666px) {
 	body { background:rgb(0, 255, 204);
 	}
 }
 @media (max-width:500px){
 	body{color:magenta;
 	background-color: black;}
-}
+} */
 
 	</Style>
 </head>
